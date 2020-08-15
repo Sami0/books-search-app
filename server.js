@@ -45,7 +45,7 @@ if (isDev) {
   app.use(expressSession({
     resave: false,
     saveUninitialized: true,
-    secret: 'unguessable',
+    secret: 'Set_____',
     store: new FileStore(),
   }));
 } else {
