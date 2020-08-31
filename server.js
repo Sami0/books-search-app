@@ -79,7 +79,7 @@ passport.use(new GoogleStrategy({
   clientID: nconf.get('auth:google:clientID'),
   clientSecret: nconf.get('auth:google:clientSecret'),
   callbackURL: new URL('/auth/google/callback', serviceUrl).href,
-  scope: 'https://www.googleapis.com/auth/plus.login',
+ userProfileURL: "https://www.googleapis.com/oauth2/v3/userinfo",
 }, (accessToken, refreshToken, profile, done) => done(null, profile)));
 
 app.get('/auth/google',
@@ -89,15 +89,6 @@ app.get('/auth/google/callback', passport.authenticate('google', {
   failureRedirect: '/',
 }));
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     
@@ -137,12 +128,6 @@ if (NODE_ENV === 'development') {
   app.use(express.static('dist'));
 }
 
-    
-    
-    
-    
-    
-    
     
     
     
