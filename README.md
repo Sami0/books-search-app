@@ -24,7 +24,7 @@ I enjoyed the time I spent working with this codebase but the greatest lesson I 
   <li>Connecting and authenticating one user through social media ( using passport.js API’s)</li>
   <li>Adding, deleting,modifying lists of data</li>
   </ul>
-,<b> Thinking about architecture that is production-ready is extremely important</b>,
+<b> Thinking about architecture that is production-ready is extremely important</b>,
 <p>which requires proper estimating of number of users, number of data they will be adding, and potential new features added in the future,this would need a different kind of attention to different problems beyond functioning in a development environment.</p>
 
 # additional notes 
